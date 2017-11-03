@@ -1,0 +1,237 @@
+/*---        ALL        ---*/
+* {
+  margin: 0;
+  padding: 0;
+}
+/*---        pour que cela soit compatible à tous les navigateurs ou 
+ * qu'on puisse tout bouger comme on veut, je sais pas quoi        ---*/
+header, img, body, nav, aside, main, footer, article, figure, section, p {
+  display: block;
+}
+/*fond gris*/
+body {
+	position: relative;
+	width: 1000px;
+	height: 1000px;
+	margin: 0 auto;
+	padding: 0;
+    /*border: 1px black solid;*/
+    box-shadow: 1px 1px 12px #555;
+    background-color: #eaeaea;
+}
+/*fond blanc*/
+#page {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 1000px; /*largeur*/
+    height: 1000px;
+    background-color: #87a1ff;
+}
+#portfolio{
+	position: absolute;
+    top: 10px;
+    left: 0px;
+    text-align: left;
+    padding-left: 20px;
+	font-family: 'Roboto-Regular';
+	font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #ffffff;
+}
+#copyright {
+    position: absolute;
+    top: 520px;
+    left: 0px;
+    width: 1000px; /*largeur*/
+    height: 30px;
+    background-color: rgba(255,193,191, 0.5);
+}
+#copy{
+	position: absolute;
+    top: 0px;
+    right: 0px;
+    text-align: right;
+    padding-right: 20px;
+	font-family: 'Roboto-Regular';
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: #ffffff;
+}
+#moiBizarre {
+	position: absolute;
+    top: 20px;
+    left: 0px;
+    width: 705px; /*largeur*/
+    height: 600px;
+    padding-right: 147px;
+    padding-left: 147px;
+}
+#welcome {
+	position: absolute;
+	top: 310px;
+	left: 548px;
+	font-family: 'ScaryHalloweenFont';
+	font-size: 45px;
+	color: #3dff91; /*vert pomme*/
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*---        BUTTON MENU RIGHT        ---*/
+
+/*BASE corail BUTTON*/
+.menu-button {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+  position: absolute;
+  right: 50px;
+  top: 30px; 
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  border-radius: 50%;
+  background-color: #5f71ff; /*bleu foncé*/
+  color: #FFFFFF;
+  font-size: 24px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+/*HOVER corail BUTTON*/
+.menu-button:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
+}
+
+/*All BUTTON*/
+.menu-button a {
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  transition: 0.4s;
+  opacity: 0;
+  width: 0px;
+  height: 0px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 50%;
+  color: #FFFFFF;
+  font-size: 24px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+}
+/*All BUTTON*/
+.menu-button a:hover {
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.28), 0 4px 15px 0 rgba(0, 0, 0, 0.25);
+}
+/*BASE top BUTTON*/
+.menu-button a:nth-child(2) {
+  -webkit-transition-delay: 0.3s;
+  -moz-transition-delay: 0.3s;
+  transition-delay: 0.3s;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background: #ffc1bf; /*rose pâle*/
+}
+/*BASE middle BUTTON*/
+.menu-button a:nth-child(3) {
+  -webkit-transition-delay: 0.4s;
+  -moz-transition-delay: 0.4s;
+  transition-delay: 0.4s;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background: #ff8a8a; /*corail*/
+}
+/*BASE bottom BUTTON*/
+.menu-button a:nth-child(4) {
+  -webkit-transition-delay: 0.5s;
+  -moz-transition-delay: 0.5s;
+  transition-delay: 0.5s;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background: #8affd5; /*vert*/
+}
+/*All BUTTON*/
+.menu-button:hover a {
+  opacity: 1;
+  width: 50px;
+  height: 50px;
+}
+/*HOVER top BUTTON*/
+.menu-button:hover a:nth-child(2) {
+  right: 80px;
+  top: 0px;
+}
+/*HOVER top BUTTON*/
+.menu-button:hover a:nth-child(2):hover {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  background: #3dff91; /*vert pomme*/
+}
+/*HOVER middle BUTTON*/
+.menu-button:hover a:nth-child(3) {
+  right: 65px;
+  top: 65px;
+}
+/*HOVER middle BUTTON*/
+.menu-button:hover a:nth-child(3):hover {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  background: #3dff91; /*vert pomme*/
+}
+/*HOVER bottom BUTTON*/
+.menu-button:hover a:nth-child(4) {
+  right: 0px;
+  top: 80px;
+}
+/*HOVER bottom BUTTON*/
+.menu-button:hover a:nth-child(4):hover {
+  -webkit-transition-delay: 0s;
+  -moz-transition-delay: 0s;
+  transition-delay: 0s;
+  background: #3dff91; /*vert pomme*/
+}
+
+/*---        POLICES        ---*/
+@font-face {
+	font-family: 'ScaryHalloweenFont';
+	src: url('POLICES/ScaryHalloweenFont.ttf');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ScaryHalloweenFont';
+	src: url('POLICES/ScaryHalloweenFont.ttf');
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Roboto-Regular';
+	src: url('POLICES/Roboto-Regular.ttf');
+	font-style: normal;
+}
+
+/*---FOR MOBILE VIEW---*/
+@media screen and (max-width: 400px) {
+  h1 {
+    padding: 15px;
+    font-size: 25px;
+  }
+}
